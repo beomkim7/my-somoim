@@ -4,7 +4,7 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### My Ignore ###
+### My Ignore Add ###
 
 GDJ_somoimPJ.properties
 
@@ -145,3 +145,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,java,maven
+/.metadata/
