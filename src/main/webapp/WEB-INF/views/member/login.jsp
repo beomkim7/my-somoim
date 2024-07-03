@@ -12,6 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- CSS 임포트 -->
 <c:import url="../temps/head_css.jsp"></c:import>
+<link rel="stylesheet" href="/resources/css/login.css">
 </head>
 
 <body>
@@ -24,32 +25,28 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
                     <div class="form-head">
-                        <h4 class="title">Login</h4>
+                        <h4 class="title">SOMOIM Login</h4>
                         <form action="./login" method="post">
                             <div class="form-group">
                                 <label for="userName">Username</label>
-                                <input name="userName" value="user1" id="userName" type="text">
+                                <input name="userName" class="form-control" value="user1" id="userName" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input name="password" value="user1" id="password" type="password">
+                                <input name="password" class="form-control" value="user1" id="password" type="password">
                             </div>
-                            <div class="check-and-pass">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input width-auto"
-                                                id="exampleCheck1">
-                                            <label class="form-check-label">Remember me</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-12">
+                            <div class="check-and-pass">                            	
+	                            <div>
+		                            <input type="checkbox" class="form-check-input width-auto" id="exampleCheck1">
+		                            <label class="form-check-label">Remember me</label>
+	                            </div>
+	                            <div>
+	                            	<button type="submit" class="btn btn-primary">Login</button>
+								</div>
+                                   <!--  <div class="col-lg-6 col-md-6 col-12">
                                         <a href="findPw" class="lost-pass">Lost your password?</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="button">
-                                <button type="submit" class="btn">Login Now</button>
+                                    </div> -->
+                                
                             </div>
 
                             <div class="socila-login">
