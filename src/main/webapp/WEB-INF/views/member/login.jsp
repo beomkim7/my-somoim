@@ -54,7 +54,7 @@
 		                                    data-callback="handleCredentialResponse">
 	                           </div>
 		
-								<div width="280.4" class="g_id_signin" data-type="standard" data size="large"
+								<div class="g_id_signin" data-type="standard" data size="large"
 								  data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
 								</div>
 		

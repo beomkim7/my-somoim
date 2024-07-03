@@ -158,8 +158,6 @@ public class MemberController {
 	public void joinGoo(MemberDTO memberDTO)throws Exception{
 		
 	}
-	
-
 
 	//소모임 앱회원가입
 	@GetMapping("join")
@@ -201,10 +199,10 @@ public class MemberController {
 	        String nickname = (String)userInfo.get("nickname");
 	        memberDTO.setUserName(getUserName);
 	        memberDTO.setNickName(nickname);
-	     
+	        System.out.println(memberDTO +"controller");
 	        MemberDTO dto = memberService.submitJoinApp(memberDTO);
 			if(dto==null) {				
-				model.addAttribute("tempmem", memberDTO);
+				model.addAttribute("appmember", memberDTO);
 				return "member/joinKakao";
 			}else {
 				

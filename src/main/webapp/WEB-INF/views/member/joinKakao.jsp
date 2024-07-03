@@ -1,4 +1,4 @@
-w<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -27,12 +27,12 @@ w<%@ page language="java" contentType="text/html; charset=UTF-8"
 
                             <div class="form-group">
                                 <label for="userName">아이디&이메일</label>
-                                <input name="userName" id="userName" value="${tempmem.userName}" type="text" readonly>
+                                <input name="userName" id="userName" value="${appmember.userName}" type="text" readonly>
                             </div>
                             
                             <div class="form-group" hidden>
                                 <label for="userName">아이디&이메일</label>
-                                <input name="email" id="userName" value="${tempmem.userName}" type="text" readonly>
+                                <input name="email" id="userName" value="${appmember.userName}" type="text" readonly>
                             </div>
 
                             <div class="form-group" hidden>
@@ -42,11 +42,11 @@ w<%@ page language="java" contentType="text/html; charset=UTF-8"
 
                             <div class="form-group">
                                 <label for="nickName">별명</label>
-                                <input name="nickName" value="${tempmem.nickName}" id="nickName" type="text">
+                                <input name="nickName" value="${appmember.nickName}" id="nickName" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="name">이름</label>
-                                <input name="name" id="name" value="${tempmem.name}" type="text">
+                                <input name="name" id="name" value="${appmember.name}" type="text">
                             </div>
                             <div class="form-group">
                                 <label for="userBirth">생년월일</label>
