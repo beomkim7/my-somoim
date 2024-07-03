@@ -52,7 +52,7 @@ public class MypageController {
 		memberDTO=(MemberDTO)session.getAttribute("appmember");
 		System.out.println("앱로그인");
 		dto = memberService.getMypage(memberDTO);
-		model.addAttribute("appmember",dto);
+		model.addAttribute("member",dto);
 		return "mypage/main";
 		}
 	}
@@ -75,7 +75,8 @@ public class MypageController {
 	public String setUpdate(MultipartFile attachs,HttpSession session,MemberDTO memberDTO)throws Exception{
 				
 		MemberDTO m = (MemberDTO)session.getAttribute("member");
-		
+		System.out.println(m);
+		System.out.println("여기로 들어오지 ?");
 		if(m == null) {
 			session.setAttribute("member", null);
 			System.out.println("나오며ㅛㄴ안돼");			
@@ -98,6 +99,7 @@ public class MypageController {
 	//앱 회원탈퇴
 	@PostMapping("appDel")
 	public String appDel(MemberDTO memberDTO,HttpSession session)throws Exception{
+		System.out.println("여기로오냐 ?");
 		MemberDTO dto = (MemberDTO)session.getAttribute("appmember");
 		memberDTO.setUserName(dto.getUserName());
 		memberDTO.setPassword(dto.getPassword());

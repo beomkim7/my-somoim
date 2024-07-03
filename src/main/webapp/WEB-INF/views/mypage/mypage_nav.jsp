@@ -39,12 +39,7 @@
 							<li class="nav-item"><a class="nav-link"
 								href="/mypage/paymentList"><i class="lni lni-printer"></i> 결제내역 확인</a></li>		
 						</ul>
-						<div class="text-center">
-							<c:if test="${member ne null}">
-								<button type="button" class="btn btn-danger mt-5" onclick="location.href='/mypage/accountDel'" >회원탈퇴</button>
-							</c:if>
-							
-							<c:if test="${appmember ne null}">
+						<div class="text-center">				
 								<form action="./appDel" method="post" id="frm">
 									<button type="button" class="btn btn-danger mt-5" id="appDel">회원탈퇴</button>
 
@@ -72,7 +67,7 @@
 										  </div>
 										</div>
 								</form>
-							</c:if>
+
 						</div>
 					</div>
 				</nav>

@@ -195,9 +195,12 @@ public class MemberController {
 	        // 3. 사용자 정보 받기
 	        Map<String, Object> userInfo = kakaoAPI.getUserInfo(accessToken);
 	        System.out.println(userInfo);
-	        String getUserName = (String)userInfo.get("email");
-	        String nickname = (String)userInfo.get("nickname");
+	        
+	        if(userInfo.get("email") != "") {
+	        String getUserName = (String)userInfo.get("email");	        
 	        memberDTO.setUserName(getUserName);
+	        }
+	        
 	        System.out.println(memberDTO +"controller");
 	        MemberDTO dto = memberService.submitJoinApp(memberDTO);
 			if(dto==null) {				

@@ -124,19 +124,10 @@ public class MemberService {
 	}
 	
 	public MemberDTO submitJoinApp(MemberDTO memberDTO)throws Exception{		
-		MemberDTO dto = memberDAO.getDetail(memberDTO);
-		System.out.println(dto);
+		memberDTO = memberDAO.getDetail(memberDTO);
 		System.out.println(memberDTO+"서비스");
-		if(dto !=null) {
-			
-			memberDTO.setNickName(dto.getNickName());
-			memberDTO.setPassword(dto.getPassword());
-			memberDTO.setProfile(dto.getProfile());
-			memberDTO.setLoginNum(dto.getLoginNum());
-			memberDTO.setRoleDTO(dto.getRoleDTO());
-			return memberDTO;
-		}
-		return dto;
+
+		return memberDTO;
 		
 	}
 	

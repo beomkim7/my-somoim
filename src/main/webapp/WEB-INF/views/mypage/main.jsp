@@ -28,7 +28,7 @@
 					<div class="row">
 						<h2 class="mb-4">Profile Settings</h2>
 						
-						<form id="frm" action="./update" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+						<form id="update" action="./update" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
 						<table class="table table-hover" id="del_td">
 							<tr>
 								<td colspan="5">
@@ -50,22 +50,22 @@
 							</tr>
 							<tr>
 								<td class="table dark">닉네임</td>
-								<td class="del">${member.nickName}${appmember.nickName}
+								<td class="del">${member.nickName}
 								</td>								
-								<td><input type="hidden" name="nickName" value="${member.nickName}${appmember.nickName}" class="show"></td>
+								<td><input type="hidden" name="nickName" value="${member.nickName}" class="show"></td>
 							</tr>
 
 							<tr>
 								<td class="table dark">이름</td>
 								<td>
-									${member.name}${appmember.name}
+									${member.name}
 								</td>								
 							</tr>
 
 							<tr>
 								<td class="table dark">주소</td>
-								<td class="del">${member.address}${appmember.address}</td>
-								<td><input type="hidden" id="adrs_in" name="address" value="${member.address}${appmember.address}" class="show"></td>
+								<td class="del">${member.address}</td>
+								<td><input type="hidden" id="adrs_in" name="address" value="${member.address}" class="show"></td>
 								<td><button type="button" id="getLocation" style="display: none;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     주소 검색하기
                                 </button>
@@ -100,14 +100,14 @@
 
 							<tr>
 								<td class="table dark">전화번호</td>
-								<td class="del">${member.phone}${appmember.phone}</td>
-								<td><input type="hidden" name="phone" value="${member.phone}${appmember.phone}" class="show"></td>
+								<td class="del">${member.phone}</td>
+								<td><input type="hidden" name="phone" value="${member.phone}" class="show"></td>
 							</tr>
 
 							<tr>
 								<td class="table dark">이메일</td>
-								<td class="del">${member.email}${appmember.email}</td>
-								<td><input type="hidden" name="email" value="${member.email}${appmember.email}" class="show"></td>
+								<td class="del">${member.email}</td>
+								<td><input type="hidden" name="email" value="${member.email}" class="show"></td>
 							</tr>
 
 						</table>
@@ -117,7 +117,7 @@
 						<button id="btn2" hidden class="btn btn-hover">수정완료</button>
 					</span>
 					<br><br><br><br>
-					<c:if test="${appmember eq null}">
+
 						<h2>비밀번호 변경</h2>
 						<form id="frm2" action="./password" method="post">
 							<table class="table table-hover" id="del_td">
@@ -142,7 +142,6 @@
 							</table>
 						</form>
 						<button id="btn3">비밀번호 수정</button>
-					</c:if>
 				</div>
 			
 					

@@ -10,8 +10,7 @@ let btn_area = document.getElementById("btn_area");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
-let frm = document.querySelector("#frm");
-let frm2 = document.querySelector("#frm2");
+
 
 btn_area.addEventListener("click",()=>{
     const btn_close = document.getElementById("btn_close");
@@ -60,7 +59,6 @@ btn1.addEventListener("click",()=>{
 
 btn2.addEventListener("click",(e)=>{
     e.preventDefault();
-    frm.submit();
     alert("수정 완료");
 
 })
