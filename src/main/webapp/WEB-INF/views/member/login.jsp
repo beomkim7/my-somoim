@@ -51,29 +51,22 @@
                             <div class="button">
                                 <button type="submit" class="btn">Login Now</button>
                             </div>
-                            <div class="alt-option">
-                                <span>Or</span>
-                            </div>
+
                             <div class="socila-login">
-                                <ul>
-                                    <li><a href="javascript:void(0)" class="facebook"><i class="lni lni-facebook-original"></i>Login With
-                                            Facebook</a></li>
-                                    <li>
-										<div id="g_id_onload" data-client_id="412327098082-jo918jh8s5gmuiifhgsimmn6m4cgcif6.apps.googleusercontent.com"
-                                        data-callback="handleCredentialResponse">
-                                        </div>
+                                    
+							<div id="g_id_onload" data-client_id="412327098082-jo918jh8s5gmuiifhgsimmn6m4cgcif6.apps.googleusercontent.com"
+                                     data-callback="handleCredentialResponse">
+                                     </div>
 
-										<div class="g_id_signin" data-type="standard" data size="large"
-										  data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
-										</div>
+							<div class="g_id_signin" data-type="standard" data size="large"
+							  data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+							</div>
 
-                                        <a id="kakao-login-btn" href="https://kauth.kakao.com/oauth/authorize?client_id=${kakaoApiKey}&redirect_uri=${redirectUri}&response_type=code">
-                                            <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222"
-                                              alt="카카오 로그인 버튼" />
-                                          </a>
+                                    <a id="kakao-login-btn" href="https://kauth.kakao.com/oauth/authorize?client_id=${kakaoApiKey}&redirect_uri=${redirectUri}&response_type=code">
+                                        <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222"
+                                          alt="카카오 로그인 버튼" />
+                                      </a>
                          
-                                        </li>
-                                </ul>
                             </div>
                             <p class="outer-link">Don't have an account? <a href="./join">회원가입</a>
                             </p>
