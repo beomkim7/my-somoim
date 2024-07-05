@@ -1,4 +1,4 @@
-console.log("메인테스트");
+
 
 let del = document.querySelectorAll('.del');
 let show = document.getElementsByClassName("show");
@@ -8,7 +8,7 @@ let getLocation = document.getElementById("getLocation");
 let btn_area = document.getElementById("btn_area");
 
 let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
+let update_btn = document.getElementById("update_btn");
 let btn3 = document.getElementById("btn3");
 
 
@@ -46,6 +46,7 @@ btn1.addEventListener("click",()=>{
     })
 
     del.forEach(e => {
+        console.log(e)
         e.remove();
     });
     for(let j = 0 ;j<del.length;j++){
@@ -53,12 +54,13 @@ btn1.addEventListener("click",()=>{
     }
 
     btn1.setAttribute("disabled",true);
-    btn2.removeAttribute("hidden");
+    update_btn.removeAttribute("hidden");
 
 })
 
 btn2.addEventListener("click",(e)=>{
     e.preventDefault();
+    update_btn.submit();
     alert("수정 완료");
 
 })

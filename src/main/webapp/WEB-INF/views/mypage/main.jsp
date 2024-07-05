@@ -20,7 +20,7 @@
 		<div class="container mx-5">
 			<div class="row">
 				<!-- Sidebar -->
-				<c:import url="./mypage_nav.jsp"></c:import>
+				
 				<div class="col-lg-1 col-md-1"></div>
 				<!-- Main content -->
 				<div class="col-lg-9 col-md-7 col-12 bg-white"
@@ -114,7 +114,7 @@
 					</form>
 					<span>
 						<button id="btn1" class="btn btn-hover">수정하기</button>
-						<button id="btn2" hidden class="btn btn-hover">수정완료</button>
+						<button id="update_btn" type="button" hidden class="btn btn-hover">수정완료</button>
 					</span>
 					<br><br><br><br>
 
@@ -167,6 +167,7 @@
 	<!-- ========================= JS improt ========================= -->
 	<c:import url="../temps/footer.jsp"></c:import>
 	<script src="../resources/js/mypage/main.js"></script>
+	<c:import url="./mypage_nav.jsp"></c:import>
 </body>
 
 </html>
